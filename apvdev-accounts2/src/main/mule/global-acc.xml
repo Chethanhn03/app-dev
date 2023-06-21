@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+	<configuration-properties doc:name="Configuration properties" doc:id="b7fdd4c9-f7f7-4dd6-aff9-c207a2582b02" file="config.yaml" />
+	<db:config name="MySQL_Database_Config" doc:name="Database Config" doc:id="93dfe5db-0ae6-4cfd-9a7f-00b77fd3eebe" >
+		<db:generic-connection url="${database.url}" driverClassName="${database.driverclass}" />
+	</db:config>
+</mule>
